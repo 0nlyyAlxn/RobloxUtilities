@@ -1,42 +1,37 @@
-# Orion Library
-This documentation is for the stable release of Orion Library.
+# NotifySystemCaller By 0nlyyAlxn
+This documentation is to know the use of the notification system.
 
-## Booting the Library
+## Booting the NotifySystemCaller
 ```lua
-local OrionLib = loadstring(game:HttpGet(('[https://raw.githubusercontent.com/0nlyyAlxn/RobloxUtilities/main/Modules/Network/NotifySystemCaller/NotifySystemModule.lua](https://raw.githubusercontent.com/0nlyyAlxn/RobloxUtilities/main/Modules/Network/NotifySystemCaller/NotifySystemModule.lua)')))()
+local NotifySystemCaller = loadstring(game:HttpGet(('https://raw.githubusercontent.com/0nlyyAlxn/RobloxUtilities/main/Modules/Network/NotifySystemCaller/NotifySystemModule.lua')))()
 ```
 
-
-
-## Creating a Window
+## Notify Example
 ```lua
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
---[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
-```
+local Notification = NotifySystemCaller:Notify({
+	Title = "TEST NOTIFICATION",
+	Description = "This is a Test Notification!"
 
+}, {
+	OutlineColor = Color3.fromRGB(0, 0, 255),
+	Time = 5, Type = "default", 
 
-
-## Creating a Tab
-```lua
-local Tab = Window:MakeTab({
-	Name = "Tab 1",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+}, {
+	Image = nil, ImageColor  = nil,
+	Callback = callback
 })
 
 --[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+
+Title = <string> - The title of the notification.
+Description = <string> - The description of the notification.
+
+OutlineColor = <Color3> - The color of the notification UI.
+Time = <number> - The duration of the notification.
+Type = <string> - The type of the notification.
+
+Image = <string> - URL to the image you want displayed on the window.
+Callback = <function> - Function to execute when pressed the check button (returns true or false).
 ]]
+```
