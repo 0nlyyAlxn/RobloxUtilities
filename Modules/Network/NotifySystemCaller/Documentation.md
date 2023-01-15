@@ -19,7 +19,7 @@ local Notification = NotifySystemCaller:Notify({
 
 }, {
 	Image = nil, ImageColor  = nil,
-	Callback = function() end
+	Callback = callback or function() end
 })
 
 --[[
