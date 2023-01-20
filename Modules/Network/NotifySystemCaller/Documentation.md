@@ -14,7 +14,7 @@ local Notification = NotifySystemCaller:Notify({
 	Description = "This is a Test Notification!"
 
 }, {
-	OutlineColor = Color3.fromRGB(0, 0, 255),
+	OutlineColor = Color3.fromRGB(255, 255, 255),
 	Time = 5, Type = "default", 
 
 }, {
