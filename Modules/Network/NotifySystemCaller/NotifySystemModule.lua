@@ -1,9 +1,10 @@
-local NotifySystemModule = {}
 local GUI = game:GetService("CoreGui"):FindFirstChild("STX_Nofitication")
 
 if not GUI then
     GUI = loadstring(game:HttpGet(('https://raw.githubusercontent.com/0nlyyAlxn/RobloxUtilities/main/Modules/Network/NotifySystemCaller/NotificationsHolder.lua')))()
 end
+
+local NotifySystemModule = {}
 
 function NotifySystemModule:Notify(nofdebug, middledebug, all)
 	
