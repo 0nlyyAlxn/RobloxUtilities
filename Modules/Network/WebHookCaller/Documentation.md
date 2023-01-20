@@ -8,7 +8,7 @@ local WebHookCaller = loadstring(game:HttpGet(('https://raw.githubusercontent.co
 
 ## Booting the WebHook
 ```lua
-WebHookModuleCaller:SetWebHook("YourWebHooHere")
+WebHookModuleCaller:SetWebHook("YourWebHookHere")
 ```
 
 ## SendMessage Example
