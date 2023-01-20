@@ -65,7 +65,5 @@ Color = <string> - The color you want the embed to contain (Ex: tonumber(0xFFFAF
 
 footer = <table> - The footer that you want the embed to contain(not required).
 fields = <table> - The fields you want the embed to contain(not required).
-
-Callback = <function> - Function to execute when pressed the check button (returns true or false).
 ]]
 ```
