@@ -3,7 +3,7 @@ This documentation is to know the use of the WebHookCaller system.
 
 ## Booting the WebHookCaller
 ```lua
-local WebHookCaller = loadstring(game:HttpGet(('https://raw.githubusercontent.com/0nlyyAlxn/RobloxUtilities/main/Modules/Network/WebHookCaller/WebHookModuleCaller.lua)'))()
+local WebHookCaller = loadstring(game:HttpGet(('https://raw.githubusercontent.com/0nlyyAlxn/RobloxUtilities/main/Modules/Network/WebHookCaller/WebHookModuleCaller.lua')))()
 ```
 
 ## Booting the WebHook
