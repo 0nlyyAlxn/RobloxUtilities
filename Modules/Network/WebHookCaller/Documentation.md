@@ -26,7 +26,7 @@ Message = <string> - The message it will contain when sending the webhook.
 ## SendEmbed Example
 ```lua
 
-local Fields = {
+local fields = {
 	{
 		["name"] = "InLine Field",
 		["value"] = "Some text here",
@@ -48,11 +48,11 @@ WebHookModuleCaller:SendEmbed({
 	Title = "TEST EMBED",
 	Message = "TEST MESSAGE",
 
-	Image = nil, -- (not required)
+	Image = nil,
 	Color = tonumber(0xFFFAFA),
 
-	footer = footer,
-	fields = Fields
+	Footer = footer,
+	Fields = fields
 })
 
 --[[
