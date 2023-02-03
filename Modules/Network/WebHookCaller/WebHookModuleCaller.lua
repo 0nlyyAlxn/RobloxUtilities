@@ -59,6 +59,14 @@ function WebHookModuleCaller:SendEmbed(EmbedDataTable)
 			if not EmbedDataTable.Color or EmbedDataTable.Color == nil then
 				EmbedDataTable.Color = tonumber(0xFFFAFA)
 			end
+			
+			if not EmbedDataTable.Image or EmbedDataTable.Image == nil then
+				EmbedDataTable.Image = ""
+			end
+			
+			if not EmbedDataTable.Thumbnail or EmbedDataTable.Thumbnail == nil then
+				EmbedDataTable.Thumbnail = 
+			end
 
 			if not EmbedDataTable.Footer or EmbedDataTable.Footer == nil then
 				EmbedDataTable.Footer = {}
@@ -79,8 +87,12 @@ function WebHookModuleCaller:SendEmbed(EmbedDataTable)
 					["description"] = tostring(EmbedDataTable.Message),
 					["color"] = EmbedDataTable.Color,
 
+					["image"] = {
+					    ["url"] = EmbedDataTable.Image,
+					},
+					
 					["thumbnail"] = {
-						["url"] = EmbedDataTable.Image,
+					    ["url"] = EmbedDataTable.Thumbnail,
 					},
 					
 					["footer"] = EmbedDataTable.Footer,
