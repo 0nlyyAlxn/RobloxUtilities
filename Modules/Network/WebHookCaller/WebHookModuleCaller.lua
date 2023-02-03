@@ -87,13 +87,13 @@ function WebHookModuleCaller:SendEmbed(EmbedDataTable)
 					["description"] = tostring(EmbedDataTable.Message),
 					["color"] = EmbedDataTable.Color,
 
-					["image"] = {
-					    ["url"] = EmbedDataTable.Image,
-					},
+					--["image"] = {
+					   -- ["url"] = EmbedDataTable.Image,
+					--},
 					
-					["thumbnail"] = {
-					    ["url"] = EmbedDataTable.Thumbnail,
-					},
+					--["thumbnail"] = {
+					   -- ["url"] = EmbedDataTable.Thumbnail,
+					--},
 					
 					["footer"] = EmbedDataTable.Footer,
 
