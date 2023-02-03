@@ -65,7 +65,7 @@ function WebHookModuleCaller:SendEmbed(EmbedDataTable)
 			end
 			
 			if not EmbedDataTable.Thumbnail or EmbedDataTable.Thumbnail == nil then
-				EmbedDataTable.Thumbnail = 
+				EmbedDataTable.Thumbnail = ""
 			end
 
 			if not EmbedDataTable.Footer or EmbedDataTable.Footer == nil then
